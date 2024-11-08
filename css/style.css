@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #031926;
+    font-size: 20px;
+    text-align: center;
+    margin: 5rem;
+}
+
+#git-hub-icon-container img{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 0;
+    right: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9f7;
+    margin: 1rem;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: #5a8eff33 0px 7px 29px 0px;
+    width: 75vh;
+}
+
+section > img {
+    align-self: center;
+    position: absolute;
+    height: 6rem;
+    top: -65px;
+    transition: transform 0.5s ease;
+}
+section > img:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    font-size: 1.7rem;
+    align-self: flex-start;
+}
+span {
+    font-size: small;
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: bold;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+input {
+    background-color: #E8E8E8;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    height: 1rem;
+    width: 45%;
+    padding: 0.5rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: left;
+    text-indent: 0.5rem;
+}
+select {
+    background-color: #E8E8E8;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 0.3rem;
+    width: 49%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+button {
+    background-color: #19A5F8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1.5rem;
+    width: 100px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0d8ad0;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-card, .abilities-card{
+    background-color: #f7f9f7;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    width: 73vh;
+    box-shadow: #5a8eff33 0px 7px 29px 0px;
+    text-align: left;
+}
+
+.pokemon-card_header, .abilities-card_header {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.pokemon-card_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.pokemon-sprites-and-evolutions img{
+    width: 50px;
+    height: 50px;
+}
+
+.pokemon-sprites-and-evolutions h3, .pokemon-stats-and-abilities h3{
+    font-size: 1rem;
+}
+
+#header-abilities {
+    margin-top: 2.5rem;
+}
+
+.pokemon-sprites-and-evolutions ul, .pokemon-stats-and-abilities ul {
+    list-style-type: circle;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #595959;
+}
+
+.pokemon-stats-and-abilities p{
+    font-size: 0.8rem;
+    color: #595959;
+}
+
+.pokemon-learn_it ul{
+    list-style-type: circle;
+    font-size: 0.9rem;
+    color: #595959;
+    margin-left: 1.5rem;
+}
+
+.pokemon-learn_it h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}

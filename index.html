@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI Project</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/app.js" type="module"></script>
+  </head>
+  <body>
+    <div id="git-hub-icon-container">
+      <a href="http://">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          alt="github-icon"
+        />
+      </a>
+    </div>
+    <main id="content">
+      <section id="form-container">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
+          alt="PokeAPI Logo"
+        />
+        <h3>Buscador de Pokemones</h3>
+        <span>Busca desde pokemones hasta habilidades de los mismos</span>
+        <form>
+          <div class="label-container">
+            <label>Buscar</label>
+            <label>Tipo de Búsqueda</label>
+          </div>
+          <div class="input-container">
+            <input type="text" name="search" placeholder="Buscar..." />
+            <select id="select-type" name="type">
+              <option value="pokemon">Pokemon</option>
+              <option value="ability">Habilidad</option>
+            </select>
+          </div>
+          <div class="button-container">
+            <button id="button-search" type="submit">Buscar</button>
+            <button id="button-reset" type="button" style="display: none">
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="details"></section>
+    </main>
+  </body>
+</html>
